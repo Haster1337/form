@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="form__div">
+                <div class="logo__form">
+                    <img src="./assets/logo.jpg" alt="logo">
+                </div>
+                <div>
+                    <form action="" name="regForm" class="reg__form">
+                        <div class="reg__grid__form">
+                            <div class="reg__label div1">
+                                <h4>First Name:</h4>
+                                <input type="text" name="firstName" id="" placeholder="Enter your name..." required>
+                            </div>
+                            <div class="reg__label div2">
+                                <h4>Last Name:</h4>
+                                <input type="text" name="LastName" id="" placeholder="Enter your name..." required>
+                            </div>
+                            <div class="reg__label div3">
+                                <h4>Email Id :</h4>
+                                <input type="email" name="email" id="" placeholder="info@xyz.com" required>
+                                <p class="error" name="emailError">Incorrect email</p>
+                            </div>
+                            <div class="reg__label div4">
+                                <h4>Mobile No. :</h4>
+                                <input type="number" name="mobile" id="" placeholder="+995-598 598 598" pattern="\+995[0-9]{9}" required>
+                            </div>
+                            <div class="reg__label div5">
+                                <h4>Password :</h4>
+                                <input type="password" name="password" id="" placeholder="xxxxxxxx" required>
+                                <p class="error" name="length">Password is too short</p>
+                                <p class="error" name="digit">At least one digit is required</p>
+                            </div>
+                            <div class="reg__label div6">
+                                <h4>Confirm Password :</h4>
+                                <input type="password" name="confirmPassword" id="" placeholder="xxxxxxxx" required>
+                                <p class="error" name="equality">Passwords is not equal to each other</p>
+                            </div>
+                            <div class="reg__label div7">
+                                <h4>Company Name :</h4>
+                                <input type="text" name="company" id="" placeholder="Enter company name..." required>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__btn">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="index.js"></script>
+</body>
+
+</html>
